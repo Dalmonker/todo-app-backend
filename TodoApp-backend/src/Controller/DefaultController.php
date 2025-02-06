@@ -11,6 +11,7 @@ final class DefaultController extends AbstractController
     #[Route('/', name: 'todo_default')]
     public function index(): Response
     {
+        // 1
         return $this->render('index.html.twig', []);
     }
 }
